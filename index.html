@@ -107,8 +107,6 @@
             <div class="calculations">
                 <div class="section">
                     <h4>Misclick: Chi-Squared Test</h4>
-                    <p>For Website A the misclick was 7 (21.21%)</p>
-                    <p>For Website B the misclick was 2 (9.52%)</p>
                     <p>Chi^2: 0.00912</p>
                     <p>P-Value: 0.923</p>
                     <p>Degrees of Freedom: 1</p>
@@ -122,11 +120,13 @@
                 </div>
                 <div class="section">
                     <h4>Time on Page: one-Tail-T-test</h4>
-                    <p>For Website A the average time was 12,860.44 ms</p>
-                    <p>For Website B the average time was 6,501.90 ms</p>
                     <p>T-Score: 3.011</p>
                     <p>P-Value: 0.998</p>
                     <p>Degrees of Freedom: 34.26</p>
+                    <p>Avg(B): 10.5</p>
+                    <p>Avg(A): 16.5</p>
+                    <p>Variance(A): 180.5</p>
+                    <p>Variance(B): 144.5</p>
                     <p>
                         The reason that I chose the One-Tail-T-test for this particular metric is because it is a continuous scenario and it is important
                         to see whether users who used Website A is took longer than Website B, and is dependent on the time interval, which is not categorical. The difference between these two pages is definetly staticically
@@ -137,29 +137,30 @@
 
                 <div class="section">
                     <h4>Click Time/ Two-Tailed-T-test</h4>
-                    <p>For Website A the average time was 5,542.94 ms</p>
-                    <p>For Website B the average time was 3,3228.52 ms</p>
                     <p>T-Score: -2.870</p>
                     <p>P-Score: 0.00643</p>
                     <p>degrees of freedom: 41.49</p>
+                    <p>Avg(B): 3228.52381</p>
+                    <p>Avg(A): 5542.941176</p>
+                    <p>Variance(A): 19411963.57</p>
+                    <p>Variance(B): 1666849.362</p>
                     <p>
                         I chose Two-Tailed-T-Test for this scenario. Similar to the second metric, this metric is continous, and I wanted to see
                         if the values were equivalent to one another or different. In other words, I wanted to see if the users for both websites take roughly the same amount
                         of time to perform a click or if they take a different amount of time. Again this shows that there is a signifance between these two sites. The p value is 0.00643 which is 
                         significanlty less 0.05. Thus the results implicate that the websites do not in fact take the same amount of time to perform a click and the 
-                        Null Hypothesis is rejected.
+                        Null Hypothesis is rejected. And am confident that my Alternative hypothesis is not correct. 
                     </p>
                 </div>
             </div>
             <div class="summary">
                 <h3>Summary</h3>
-                <p>For this data I chose to look at the mean, count, and mode. Ultiamtely the shapes of the data are drastically different 
+                <p>
+                    Ultiamtely the shapes of the data are drastically different 
                     with the A sample having 33 participants and the B sample only having 21. When it comes to the overall mean for all of the tests,
-                    initially the firs test shows both datas have a low misclick rate. The second test shows that for A, users spent relatively more time than on
-                    website B, which was supported by the Alternative Hypothesis for that metric. The final metric Proved the alternative hypothesis by stating that
-                    the user was able to make their first click quicker on site B than site A. OVerall, the means of these metrics confirm the outcomes that were derived by the 
-                    different tests. When it comes to the mode, for each of the metrics, sample A has larger values. This is supported by its relatively larger
-                    values compared to sample B. Ultiamtely the shape of both data shows that there was a wider range of inputs (more data points) for sample A relative
+                    initially the first test shows both data have a low misclick rate. The second test shows that for A, users spent relatively more time than on
+                    website B. The final metric Proved the user was able to make their first click quicker on site B than site A. OVerall, the means of these metrics confirm the outcomes that were derived by the 
+                    different tests. When it comes to the mode, for each of the metrics, sample A has larger values. Ultiamtely the shape of both data shows that there was a wider range of inputs (more data points) for sample A relative
                     to sample B. This could definitely affect the overall data of the metrics and prove to heavily influence the shape of the outcomes for the data. 
                 </p>
             </div>
