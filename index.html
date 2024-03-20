@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="version" content="B">
+    <link rel="stylesheet" href="styles.css">
+    <title>A/B Testing</title>
+</head>
+<body>
+    <div class="body-div">
+        <div class="web-img">
+            <h1>
+                A/B Testing
+            </h1>
+            <div class="imgs">'
+                <div class="before">
+                    <h2>
+                        Before
+                    </h2>
+                    <img src="Screenshot 2024-03-19 at 11.07.49 PM.png"/>
+                    
+                </div>
+                <div class="after">
+                    <h2>
+                        After
+                    </h2>
+                    <img src="Screenshot 2024-03-19 at 9.38.05 PM.png"/>
+                </div>      
+            </div>
+            <p>
+                For the website I changed the appointments so that they popped out from the page.
+                I also altered the header to be more rounded off. Also I rounded off the dashboard.
+            </p>
+        </div>
+        <hr>
+        <div class="data-img">
+            <h3>
+                Data 
+            </h3>
+            <div class="data">
+                <div class="A">
+                    <h3>'A'</h3>
+                    <img src="Screenshot 2024-03-20 at 12.40.41 AM.png"/>
+                </div>
+                <div class="B">
+                    <h3>'B'</h3>
+                    <img src="Screenshot 2024-03-19 at 10.41.37 PM.png"/>
+                </div>
+            </div>
+            <h4>
+                Analysis
+            </h4>
+                <div class="grid">
+                    <div class="analysis-elmnt">
+                        <h4>Misclick Rate</h4>
+                            <i><b>Null Hypothesis: </b></i>
+                            <p>Both Website A and B have an equivalent misclick rate</p>
+                            <i><b>Alternative Hypothesis: </b></i>
+                            <p>Website A has a lower misclick rate compared to website B</p>
+                            <i><b>NULL and Why: </b></i>
+                            <p>
+                                I assume that the Null Hypothesis will be proven incorrect, because of the differences in the web pages designs.
+                            </p>
+                            <i><b>Alternative and Why: </b></i>
+                            <p>
+                                I assume the misclick rate for Website A will be smaller because the user is more used to that particular site rather than 
+                                the site B. I choose to make the design of site B less accessible and less manuevarble, so that it would be harder for the user
+                                to select the correct option. 
+                            </p>
+                    </div>
+                    <div class="analysis-elmnt other">
+                        <h4>Time on Page</h4>
+                            <i><b>Null Hypothesis: </b></i>
+                            <p>The user spends about the same amount of time on website A as they do website B</p>
+                            <i><b>Alternative Hypothesis: </b></i>
+                            <p>The user spends more time on website B than wesbite A</p>
+                            <i><b>NULL and Why: </b></i>
+                            <p>
+                                I assume that the Null Hypothesis will be proven correct. Although I do believe that the Alternative Hypothesis does have
+                                some affect on the user, I assume that it would relatively be the same for both experiences.  
+                            </p>
+                            <i><b>Alternative and Why: </b></i>
+                            <p>
+                                My predicition that the user spends slightly more time on website B than A is because of the design choices. They dont have any particular
+                                reasoning and makes the website look more messy. Which in term, I think will make the user spend a little longer time on the website. However,
+                                I do think that both sites will relatively have the same times.
+                            </p>
+                    </div>
+                    <div class="analysis-elmnt third">
+                        <h4>Time to First click</h4>
+                        <p>"This selected metric is to measure the presumed 'difficulty' of the user to click on a button"</p>
+                        <i><b>Null Hypothesis: </b></i>
+                        <p>The user's first click takes the same amount of time for both websites</p>
+                        <i><b>Alternative Hypothesis: </b></i>
+                        <p>The user's first click takes longer on website B than wesbite A</p>
+                        <i><b>NULL and Why: </b></i>
+                            <p>
+                                I assume that the Null Hypothesis will be proven correct and that B and A will relatively take the same amount of time. 
+                            </p>
+                        <i><b>Alternative and Why: </b></i>
+                            <p>
+                                My assumption is that it would take the user slightly shorter on site B than website A because of  the 'stand-out' features.
+                            </p>
+                    </div>
+            </div>
+            <h3>Calculations</h3>
+            <div class="calculations">
+                <div class="section">
+                    <h4>Misclick: Chi-Squared Test</h4>
+                    <p>For Website A the misclick was 7 (21.21%)</p>
+                    <p>For Website B the misclick was 2 (9.52%)</p>
+                    <p>T-Score: 1.14</p>
+                    <p>P-Value: 0.672</p>
+                    <p>Degrees of Freedom: 51.32</p>
+                    <p>
+                        For this test I Choose the Chi-Squared test because this is more of a classification task. In other 
+                        words the user can belong to one of two categories, either correct click or incorrect click.  The difference
+                        between version A and B is definetly staticically significant. The important value is the p value is .67 which 
+                        is significantly greater than the baseline of .05. Thus, I would say that this particular result rejects the null hypothesis.
+                    </p>
+                </div>
+                <div class="section">
+                    <h4>Time on Page: T-test</h4>
+                    <p>For Website A the average time was 12,860.44 ms</p>
+                    <p>For Website B the average time was 6,501.90 ms</p>
+                    <p>T-Score: 3.011</p>
+                    <p>P-Value: 0.998</p>
+                    <p>Degrees of Freedom: 34.26</p>
+                    <p>
+                        The reason that I chose the T-test for this particular metric is because it is a continuous scenario,
+                        and is dependent on the time interval, which is not categorical. The difference between these two pages is definetly staticically
+                        significant. I determined this based on the y value which is approximately .998 which is significantly
+                        greater than 0.05. This rejects the null hypothesis.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h4>Click Time/ T-test</h4>
+                    <p>For Website A the average time was 5,542.94 ms</p>
+                    <p>For Website B the average time was 3,3228.52 ms</p>
+                    <p>T-Score: 2.870</p>
+                    <p>P-Score0.997</p>
+                    <p>degrees of freedom: 41.49</p>
+                    <p>
+                        I chose T-Test for this scenario. Similar to the other metric, this metric is continous. Again this 
+                        shows that there is s agrate staticical signifance between these two sites. The p value is 0.997 which is 
+                        significanlty greater than 0.05. Thus the results are signifant. Also this rejects the null hypothesis
+                    </p>
+                </div>
+            </div>
+            <div class="summary">
+                <h3>Summary</h3>
+                <p>For this particular section of the testing I chose to do two different staticical testing methods. For the first 
+                    test I choose to calculate the percentage of the proper clicks relative to the overall number of clicks. And as you can 
+                    see there is a significant difference between these two values. I chose this because it is a simple way to generalize the 
+                    data. In terms of the other two tests I chose to do a mean. This is because it allows me to generalize the data 
+                    and simply show that on average how long it took the users to click the correct button and simply click. Having these two metrics allows
+                    the tester, myself, to see the relationship between correct clicks and the time it takes to make the correct click
+                    relative to the amount of overall clicks.
+                </p>
+            </div>
+        </div>
+</body>
+</html>

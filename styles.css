@@ -1,0 +1,84 @@
+.body-div {
+    background-color: lightblue;
+}
+
+.body-div img {
+    text-align: center;
+    width: 90%;
+    height: 75%;
+}
+
+.data-img{
+    text-align: center;
+}
+
+.after {
+    text-align: center;
+}
+
+.body-div h1 {
+    text-align: center;
+}
+
+.body-div h3 {
+    text-align: center;
+}
+
+.web-img p {
+    text-align: center;
+}
+
+hr {
+    color: white;
+}
+
+.body-div h4 {
+    text-align: center;
+}
+
+.imgs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.before,.after h2{
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    text-align: center;
+}
+
+
+.grid {
+    display: flex;
+    background-color: white;
+}
+
+.grid h4 {
+    text-align: center;
+}
+
+.analysis-elmnt {
+    border:solid black;
+}
+
+.A, .B img{
+    text-align: center;
+    width: 100%;
+
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+}
+
+.calculations {
+    display: flex;
+    justify-content: space-around;
+}
